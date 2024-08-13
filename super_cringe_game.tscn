@@ -18,7 +18,7 @@ grow_vertical = 2
 color = Color(0.0941176, 0.109804, 0.160784, 1)
 
 [node name="Industrial_v2" type="Sprite2D" parent="."]
-position = Vector2(243, 139)
+position = Vector2(240, 181)
 texture = ExtResource("1_y2237")
 
 [node name="Me" parent="." instance=ExtResource("2_3tamj")]
