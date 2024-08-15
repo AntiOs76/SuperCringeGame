@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 @export var JUMP_VELOCITY = 250.0
 @export var WALK_FORCE = 300.0
-@export var WALK_MAX_SPEED = 50.0
+@export var WALK_MAX_SPEED = 75.0
 @export var STOP_FORCE = 200.0
 
 # 获得重力常数
@@ -20,7 +20,6 @@ func _physics_process(delta):
 	# 跳
 	elif Input.is_action_just_pressed("ui_up"):
 		velocity.y = -JUMP_VELOCITY
-
 
 	var walk = WALK_FORCE * (Input.get_axis("ui_left", "ui_right")) #摇杆支持
 	# 摩擦力减速，如果不动
