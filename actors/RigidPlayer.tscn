@@ -313,6 +313,7 @@ size = Vector2(8, 1)
 
 [node name="RigidPlayer" type="RigidBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_f3y7q")
+can_sleep = false
 lock_rotation = true
 script = ExtResource("1_ahag0")
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b6pko3334kcx1"]
+[gd_scene load_steps=28 format=3 uid="uid://b6pko3334kcx1"]
 
 [ext_resource type="Texture2D" uid="uid://58rv3noogj6b" path="res://assets/industrial.v2.png" id="2_qp2q8"]
 [ext_resource type="PackedScene" uid="uid://dig8x011mduvh" path="res://actors/RigidPlayer.tscn" id="3_kolaj"]
@@ -1071,6 +1071,9 @@ size = Vector2(32, 32)
 resource_local_to_scene = true
 size = Vector2(349.982, 10)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kyeli"]
+size = Vector2(49.75, 12)
+
 [node name="Playground" type="Node"]
 
 [node name="Slynrd0" type="Sprite2D" parent="."]
@@ -1283,6 +1286,15 @@ position = Vector2(490, 167)
 position = Vector2(148, -149.991)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_n3slk")
+
+[node name="platform11" type="AnimatableBody2D" parent="."]
+position = Vector2(580, 179)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform11"]
+position = Vector2(-6, -11.125)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_kyeli")
+one_way_collision = true
 
 [connection signal="body_entered" from="WinArea" to="WinArea" method="_on_body_entered"]
 [connection signal="keyfall" from="platform7" to="Lining" method="_on_platform_7_keyfall"]
