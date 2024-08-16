@@ -2,4 +2,6 @@
 
 A beginner project
 
-![空气墙alpha1.1](.\GIF\空气墙alpha1.1.gif)
+<div align="left">
+    <img src=".github/空气墙alpha1.1.gif" width="320">
+</div>
